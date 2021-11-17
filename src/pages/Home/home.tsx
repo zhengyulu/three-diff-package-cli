@@ -1,5 +1,5 @@
 import Styles from './home.module.scss';
-import homepagePic from '../../assets/homepage.jpg';
+import homepagePic from '@/assets/homepage.jpg';
 
 function Home(): JSX.Element {
 

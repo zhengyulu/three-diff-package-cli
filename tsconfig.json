@@ -7,6 +7,9 @@
       "esnext"
     ],
     "allowJs": true,
+    "types": [
+      "webpack-env"
+    ],
     "skipLibCheck": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
@@ -20,7 +23,12 @@
     "noEmit": true,
     "jsx": "react-jsx"
   },
+  "extends": "./ts-paths.json",
   "include": [
     "src"
+  ],
+  "exclude": [
+    "node_modules",
+    "**/*.spec.ts"
   ]
 }

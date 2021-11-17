@@ -1,8 +1,8 @@
-import { BrowserRouter, Routes, Route, } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Home from "./pages/Home";
 import Setup from "./pages/Setup";
 
-function Router() {
+function Router(): JSX.Element {
   return (
     <BrowserRouter>
       <Routes>
@@ -13,6 +13,10 @@ function Router() {
         <Route
           path="/setup"
           element={<Setup />}
+          />
+        <Route
+          path="/"
+          element={ <Navigate replace to="/setup" /> } 
           />
       </Routes>
     </BrowserRouter>
