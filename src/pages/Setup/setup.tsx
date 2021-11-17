@@ -3,7 +3,7 @@ import { useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
 import setupPic from '../../assets/setup.jpg';
 
-function Setup() {
+function Setup(): JSX.Element {
   const navigate = useNavigate();
   const clickHandle = useCallback(() => {
     navigate('/home')
@@ -13,7 +13,7 @@ function Setup() {
     <div className={Styles.pageContainer}>
       <img onClick={clickHandle} src={setupPic} alt="setup" />
     </div>
-  )
+  );
 }
 
 export default Setup;
