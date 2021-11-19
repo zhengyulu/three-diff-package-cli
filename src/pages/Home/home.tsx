@@ -1,3 +1,4 @@
+import React from 'react';
 import Styles from './home.module.scss';
 import homepagePic from '@/assets/homepage.jpg';
 
